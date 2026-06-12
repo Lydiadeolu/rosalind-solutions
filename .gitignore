@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Exclude Rosalind sample dataset downloads
+*.txt
+!requirements.txt
