@@ -28,7 +28,7 @@ rosalind-solutions/
    └──bioutils.py                          # Centalized biology logic (DNA transcription, etc.)
 ```
 
-### 🛠️ Getting Started & Installation
+## 🛠️ Getting Started & Installation
 
     To run these scripts locally, ensure you have Python 3.8+ installed on your system.
 
@@ -49,7 +49,7 @@ rosalind-solutions/
        pip install -r requirements.txt
 
 
-#### 🧩 The utils/ Library (DRY Principle)
+## 🧩 The utils/ Library (DRY Principle)
 
 Bioinformatics problems often require repetitive tasks (e.g., transcribing DNA, calculating GC-content, translating RNA to proteins). To maintain clean code and follow DRY (Don't Repeat Yourself) principles, all core helper functions are modularized inside utils/bioutils.py.
 
@@ -58,51 +58,51 @@ Any solution script can easily import these shared functions:
 from utils.bioutils import transcribe_dna, translate_rna
 
 
-##### 📊 Progress Tracker
+## 📊 Progress Tracker
 
 Below is an active checklist of my completed challenges. I update this whenever I push new solutions.
 
-🐍 Python Village (Basics of Programming)
+### 🐍 Python Village (Basics of Programming)
 
-    [ ] INI1 - Installing Python
+#### [ ] INI1 - Installing Python
 
-    [ ] INI2 - Variables and Four Operations
+#### [ ] INI2 - Variables and Four Operations
 
-    [ ] INI3 - Strings and Lists
+#### [ ] INI3 - Strings and Lists
 
-    [ ] INI4 - Conditions and Loops
+#### [ ] INI4 - Conditions and Loops
 
-    [ ] INI5 - Working with Files
+#### [ ] INI5 - Working with Files
 
-    [ ] INI6 - Dictionaries
+#### [ ] INI6 - Dictionaries
 
-🏰 Bioinformatics Stronghold (Algorithmic Biology)
+### 🏰 Bioinformatics Stronghold (Algorithmic Biology)
 
-    [ ] DNA - Counting DNA Nucleotides
+#### [ ] DNA - Counting DNA Nucleotides
 
-    [ ] RNA - Transcribing DNA into RNA
+#### [ ] RNA - Transcribing DNA into RNA
 
-    [ ] REVC - Complementing a Strand of DNA
+#### [ ] REVC - Complementing a Strand of DNA
 
-    [ ] FIB - Rabbits and Recurrence Relations
+#### [ ] FIB - Rabbits and Recurrence Relations
 
-    [ ] GC - Computing GC Content
+#### [ ] GC - Computing GC Content
 
-    [ ] HAMM - Counting Point Mutations
+#### [ ] HAMM - Counting Point Mutations
 
-    [ ] PROT - Translating RNA into Protein
+#### [ ] PROT - Translating RNA into Protein
 
-    [ ] SUBS - Finding a Motif in DNA
+#### [ ] SUBS - Finding a Motif in DNA
 
-🛡️ Bioinformatics Armory (Using Industry Tools)
+## 🛡️ Bioinformatics Armory (Using Industry Tools)
 
-    [ ] INI - Introduction to the Bioinformatics Armory
+#### [ ] INI - Introduction to the Bioinformatics Armory
 
-    [ ] DBPR - Introduction to Protein Databases
+#### [ ] DBPR - Introduction to Protein Databases
 
-    [ ] GBK - GenBank Introduction
+#### [ ] GBK - GenBank Introduction
 
-###### 🧬 Academic Context & Goals
+## 🧬 Academic Context & Goals
 
 This project is built to demonstrate rigorous code organization and algorithmic problem-solving in preparation for advanced studies in computational genomics. By modeling biological systems programmatically, I aim to master:
 
