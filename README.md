@@ -6,6 +6,7 @@ Welcome to my repository of solutions for Rosalind, a platform for learning bioi
 
 The project is organized hierarchically by Rosalind tracks, keeping each solution isolated alongside its mathematical/biological context.
 
+''' text
 rosalind-solutions/
 ├── README.md               # Main index and progress tracker
 ├── .gitignore             # Prevents clutter and raw data uploads
@@ -24,7 +25,7 @@ rosalind-solutions/
 │   └── README.md
 └── utils/                 # Modular, reusable helper functions
     └── bioutils.py        # Centralized biology logic (DNA transcription, etc.)
-
+'''
 
 🛠️ Getting Started & Installation
 
