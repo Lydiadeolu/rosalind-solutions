@@ -30,23 +30,23 @@ rosalind-solutions/
 
 🛠️ Getting Started & Installation
 
-To run these scripts locally, ensure you have Python 3.8+ installed on your system.
+    To run these scripts locally, ensure you have Python 3.8+ installed on your system.
 
-Clone the repository:
-
-git clone https://github.com/your-username/rosalind-solutions.git
-cd rosalind-solutions
-
-
-Set up a virtual environment (Optional but Recommended):
-
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    Clone the repository:
+    Run these command
+       git clone https://github.com/Lydiadeolu/rosalind-solutions.git
+       cd rosalind-solutions
 
 
-Install dependencies:
+    Set up a virtual environment (Optional but Recommended):
+    Run these command
+       python -m venv venv
+       source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-pip install -r requirements.txt
+
+    Install dependencies:
+    Run these command
+       pip install -r requirements.txt
 
 
 🧩 The utils/ Library (DRY Principle)
@@ -64,52 +64,52 @@ Below is an active checklist of my completed challenges. I update this whenever 
 
 🐍 Python Village (Basics of Programming)
 
-[ ] INI1 - Installing Python
+    [ ] INI1 - Installing Python
 
-[ ] INI2 - Variables and Four Operations
+    [ ] INI2 - Variables and Four Operations
 
-[ ] INI3 - Strings and Lists
+    [ ] INI3 - Strings and Lists
 
-[ ] INI4 - Conditions and Loops
+    [ ] INI4 - Conditions and Loops
 
-[ ] INI5 - Working with Files
+    [ ] INI5 - Working with Files
 
-[ ] INI6 - Dictionaries
+    [ ] INI6 - Dictionaries
 
 🏰 Bioinformatics Stronghold (Algorithmic Biology)
 
-[ ] DNA - Counting DNA Nucleotides
+    [ ] DNA - Counting DNA Nucleotides
 
-[ ] RNA - Transcribing DNA into RNA
+    [ ] RNA - Transcribing DNA into RNA
 
-[ ] REVC - Complementing a Strand of DNA
+    [ ] REVC - Complementing a Strand of DNA
 
-[ ] FIB - Rabbits and Recurrence Relations
+    [ ] FIB - Rabbits and Recurrence Relations
 
-[ ] GC - Computing GC Content
+    [ ] GC - Computing GC Content
 
-[ ] HAMM - Counting Point Mutations
+    [ ] HAMM - Counting Point Mutations
 
-[ ] PROT - Translating RNA into Protein
+    [ ] PROT - Translating RNA into Protein
 
-[ ] SUBS - Finding a Motif in DNA
+    [ ] SUBS - Finding a Motif in DNA
 
 🛡️ Bioinformatics Armory (Using Industry Tools)
 
-[ ] INI - Introduction to the Bioinformatics Armory
+    [ ] INI - Introduction to the Bioinformatics Armory
 
-[ ] DBPR - Introduction to Protein Databases
+    [ ] DBPR - Introduction to Protein Databases
 
-[ ] GBK - GenBank Introduction
+    [ ] GBK - GenBank Introduction
 
 🧬 Academic Context & Goals
 
 This project is built to demonstrate rigorous code organization and algorithmic problem-solving in preparation for advanced studies in computational genomics. By modeling biological systems programmatically, I aim to master:
 
-Dynamic programming (sequence alignment, gene prediction)
+    [ ] Dynamic programming (sequence alignment, gene prediction)
 
-Graph theory applications (genome assembly using de Bruijn graphs)
+    [ ] Graph theory applications (genome assembly using de Bruijn graphs)
 
-High-throughput data analysis and sequence modeling
+    [ ]High-throughput data analysis and sequence modeling
 
-Feel free to explore the folders to view my solution scripts and associated markdown notes!
+    [ ]Feel free to explore the folders to view my solution scripts and associated markdown notes!
