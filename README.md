@@ -6,26 +6,17 @@ Welcome to my repository of solutions for Rosalind, a platform for learning bioi
 
 The project is organized hierarchically by Rosalind tracks, keeping each solution isolated alongside its mathematical/biological context.
 
-''' text
+```text
 rosalind-solutions/
 ├── README.md               # Main index and progress tracker
 ├── .gitignore             # Prevents clutter and raw data uploads
 ├── requirements.txt       # Python dependencies (Biopython, NumPy, etc.)
-├── python_village/        # Introduction to Python programming
-│   ├── README.md          # Track overview
-│   └── INI1_.../          # Dedicated problem folder
-│       ├── solution.py
-│       └── README.md      # Problem notes and algorithms
-├── stronghold/            # Core algorithmic bioinformatics track
-│   ├── README.md          # Track overview
-│   └── DNA_.../
-│       ├── solution.py
-│       └── README.md
-├── armory/                # Solving problems with external biological tools
-│   └── README.md
-└── utils/                 # Modular, reusable helper functions
-    └── bioutils.py        # Centralized biology logic (DNA transcription, etc.)
-'''
+└── python_village/        # Introduction to Python programming
+    ├── README.md          # Track overview
+    └── INI1_.../          # Dedicated problem folder
+        ├── solution.py
+        └── README.md      # Problem notes and algorithms
+```
 
 🛠️ Getting Started & Installation
 
