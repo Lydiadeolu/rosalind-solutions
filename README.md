@@ -1,8 +1,8 @@
-Rosalind Bioinformatics Solutions
+# Rosalind Bioinformatics Solutions
 
 Welcome to my repository of solutions for Rosalind, a platform for learning bioinformatics through problem-solving. This repository serves as a structured archive of my journey in computational biology, mapping out solutions to algorithmic challenges that bridge computer science, mathematics, and genetics.
 
-📂 Repository Structure
+## 📂 Repository Structure
 
 The project is organized hierarchically by Rosalind tracks, keeping each solution isolated alongside its mathematical/biological context.
 
@@ -28,7 +28,7 @@ rosalind-solutions/
    └──bioutils.py                          # Centalized biology logic (DNA transcription, etc.)
 ```
 
-🛠️ Getting Started & Installation
+### 🛠️ Getting Started & Installation
 
     To run these scripts locally, ensure you have Python 3.8+ installed on your system.
 
@@ -49,7 +49,7 @@ rosalind-solutions/
        pip install -r requirements.txt
 
 
-🧩 The utils/ Library (DRY Principle)
+#### 🧩 The utils/ Library (DRY Principle)
 
 Bioinformatics problems often require repetitive tasks (e.g., transcribing DNA, calculating GC-content, translating RNA to proteins). To maintain clean code and follow DRY (Don't Repeat Yourself) principles, all core helper functions are modularized inside utils/bioutils.py.
 
@@ -58,7 +58,7 @@ Any solution script can easily import these shared functions:
 from utils.bioutils import transcribe_dna, translate_rna
 
 
-📊 Progress Tracker
+##### 📊 Progress Tracker
 
 Below is an active checklist of my completed challenges. I update this whenever I push new solutions.
 
@@ -102,7 +102,7 @@ Below is an active checklist of my completed challenges. I update this whenever 
 
     [ ] GBK - GenBank Introduction
 
-🧬 Academic Context & Goals
+###### 🧬 Academic Context & Goals
 
 This project is built to demonstrate rigorous code organization and algorithmic problem-solving in preparation for advanced studies in computational genomics. By modeling biological systems programmatically, I aim to master:
 
@@ -110,6 +110,6 @@ This project is built to demonstrate rigorous code organization and algorithmic 
 
     [ ] Graph theory applications (genome assembly using de Bruijn graphs)
 
-    [ ]High-throughput data analysis and sequence modeling
+    [ ] High-throughput data analysis and sequence modeling
 
-    [ ]Feel free to explore the folders to view my solution scripts and associated markdown notes!
+    [ ] Feel free to explore the folders to view my solution scripts and associated markdown notes!
