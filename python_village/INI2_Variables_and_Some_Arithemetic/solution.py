@@ -1,3 +1,5 @@
+# Key decisions: Using the standard power operator (**) is clean and efficient for squaring numbers.
+
 def solve_hypotenuse_squared(a, b ):
     return (int (a) ** 2) + ( int (b) ** 2)
 
