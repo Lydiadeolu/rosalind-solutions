@@ -8,24 +8,34 @@ The project is organized hierarchically by Rosalind tracks, keeping each solutio
 
 ```text
 rosalind-solutions/
-├── README.md                              # Main index and progress tracker
-├── .gitignore                             # Prevents clutter and raw data uploads
-├── requirements.txt                       # Python dependencies (Biopython, NumPy, etc.)
-└── python_village/                        # Introduction to Python programming
-    ├── README.md                          # Track overview
-    └── INI1_installing_python/            # Dedicated problem folder
+├── README.md                                             # Main index and progress tracker
+├── .gitignore                                            # Prevents clutter and raw data uploads
+├── requirements.txt                                      # Python dependencies (Biopython, NumPy, etc.)
+└── python_village/                                       # Introduction to Python programming
+    ├── README.md                                         # Track overview
+    └── INI1_installing_python/                           # Dedicated problem folder
         ├── solution.py
-        └── README.md                      # Problem notes and algorithms
-└── stronghold/                            # Core algorithmic bioinformatics track
-    ├── README.md                          # Track overview
-    └── DNA_counting_nucleotides/          # Dedicated problem folder
+        └── README.md                                     # Problem notes and algorithms
+    └── INI2_Variables_and_Some_Arithemetics/             # Dedicated problem folder
         ├── solution.py
-        └── README.md                      # Problem notes and algorithms
-└──armory/                                 #solving problems with external biological tools
+        └── README.md                                     # Problem notes and algorithms
+    └── INI3_Strings_and_Lists/                           # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+    └── INI4_Conditions_and_Loops/                        # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+        └── ....
+└── stronghold/                                           # Core algorithmic bioinformatics track
+    ├── README.md                                         # Track overview
+    └── DNA_counting_nucleotides/                         # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+└──armory/                                                #solving problems with external biological tools
     ├── README.md  
     └── ....
-└──utils/                                  # Modular, reuseable helper functions
-   └──bioutils.py                          # Centalized biology logic (DNA transcription, etc.)
+└──utils/                                                 # Modular, reuseable helper functions
+   └──bioutils.py                                         # Centalized biology logic (DNA transcription, etc.)
 ```
 
 ## 🛠️ Getting Started & Installation
