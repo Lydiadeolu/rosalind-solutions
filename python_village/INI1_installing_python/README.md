@@ -34,6 +34,9 @@ The problem serves as a "Hello word
 # key decisions: No complex data structures are needed here
 # Simply importing the `this` module authomatically triggers the print statement
 # containing the Zen of Python.
+
+import this
+
 ```
 ---
 ## key Python Concepts Used
