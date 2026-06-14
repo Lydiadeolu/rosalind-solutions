@@ -1,49 +1,57 @@
-# INI1 -- Installing Python
+# Python Village
 
-**Section:** Python Village
-**Difficulty:** Easy
-**Topics:** `python-basics` `envinronment-setup`
-**Rosalind Link** https://rosalind.info/problem/INI1/
-**Date Solved:** 2026-06-13
+This section contains solutions for the **Python Village** introductory track on [Rosalind](https://rosalind.info/problems/list-view/?v=pv). This track is designed to establish a basic working foundation in Python mechanics, file handling, and programming logic before diving into complex biosequence algorithms.
 
 ---
 
-## Biological Background
+## Track Progress Dashboard
 
-this specific introductory problem doesn't feature a biological concept, setting a proper prpgramming environment is the fundamental first step in bioinformatics. Computational biology relies heavily on Python due to its readability and powerful libraries (like Biopython) for parsing genomic date, analysing sequences, and handling massive datasets.
+| Problem ID | Title | Core Focus | Status |
+| :--- | :--- | :--- | :--- |
+| **INI1** | [Introduction to the Python Environment](./INI1_introduction_to_the_python_environment/) | Setting up Python & Packages |  Completed |
+| **INI2** | [Variables and Some Arithmetic](./INI2_variables_and_some_arithmetic/) | Variable assignment & math bounds |  Completed |
+| **INI3** | [Strings and Lists](./INI3_strings_and_lists/) | Inclusive coordinate string slicing |  Completed |
+| **INI4** | [Conditions and Loops](./INI4_conditions_and_loops/) | Control flow & numerical filtering |  Completed |
+| **INI5** | [Working with Files](./INI5_working_with_files/) | File I/O & even-numbered line parsing | ⏳ In Progress |
+| **INI6** | [Dictionaries](./INI6_dictionaries/) | Key-value frequency mapping | ⏳ In Progress |
 
 ---
 
-## Problem Statement
+## Structural Strategy
 
-The problem serves as a "Hello word
-'verification for Python environment. It requires you to import `this` module, which prints "The Zen of Python" (a collection of 19 guiding principles for writing computer programs in Python).
+Every problem folder inside this directory is standardized with a predictable framework to keep the repository uniform, clean, and easily reproducible:
 
----
+```text
+python_village/
+├── INI1_introduction_to_the_python_environment/
+│   ├── README.md      # Problem breakdown, concepts, and biology tie-in
+│   └── solution.py    # Clean, runnable Python script matching Rosalind constraints
+├── INI2_variables_and_some_arithmetic/
+│   ├── README.md
+│   └── solution.py
+├── INI3_Strings_and_Lists/
+│   ├── README.md
+│   └── solution.py
+├── INI4_Conditions_and_Loops/
+│   ├── README.md
+│   └── solution.py
+└── ...
 
-## Approach
-
-1. Open your local Python interpreter or create a new Python script.
-2. Use the `import` keyword to load the built-in `this` module
-3. Run the script to output the Zen of Python text to the concole.
-
-## Solution
-
-```python
-# solution.py
-# key decisions: No complex data structures are needed here
-# Simply importing the `this` module authomatically triggers the print statement
-# containing the Zen of Python.
 ```
----
-## key Python Concepts Used
-```
-- Modules and Importing: Using the import statment to bring external or built-in code into current workspace.
+## Data Isolation
 
-- The Zen of python: Aset of core philosophies distilled by Tim Peters that influences the desing and style of Python code (e.g., "Beautiful is better than ugly," "Simpe is better than complex")
-```
----
+Individual downloaded dataset texts (rosalind_ini*.txt) are explicitly ignored by .gitignore to protect pipeline hygiene and honor Rosalind's unique per-user dataset dynamic.
 
-## Related Problems
+## Robust File I/O
 
-INI2 -- Next step: basic arithmetic variables
+Script implementations wrap file handling inside context managers (with open()) paired with structural fallbacks to execute flawlessly in both production pipelines or standalone text executions
+
+## Core Ecosystem Toolkit
+
+While progressing through these exercises, the following fundamental properties of Python are established:
+1. Dynamic Typing: On-the-fly variable assignment without explicit type declarations.
+2. Zero-Indexing & Exclusive Upper Bounds: Navigating ranges and structural slices where the upper bound boundary is consistently non-inclusive ([start:stop]).
+3. Immutability Rules: Manipulating strings securely while understanding they cannot be modified in-place.
+4. Dictionary Lookups: Leveraging Hash maps for O(1) efficiency when computing large counts or data frequencies.
+
+# Next Track: Bioinformatics Stronghold ➔
