@@ -22,10 +22,13 @@ rosalind-solutions/
     └── INI3_Strings_and_Lists/                           # Dedicated problem folder
         ├── solution.py
         └── README.md                                     # Problem notes and algorithms
-    └── INI4_Conditions_and_Loops/                        # Dedicated problem folder
+    └── INI5_Working_with_files/                          # Dedicated problem folder
         ├── solution.py
         └── README.md                                     # Problem notes and algorithms
-        └── ....
+    └── INI6_Dictionaries/                                # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+        
 └── stronghold/                                           # Core algorithmic bioinformatics track
     ├── README.md                                         # Track overview
     └── DNA_counting_nucleotides/                         # Dedicated problem folder
