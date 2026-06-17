@@ -39,28 +39,31 @@ Given a DNA string $s$ (a string of length at most 1000 bp), return four integer
 # Using a dictionary or the collections.Counter class provides a clean, 
 # readable implementation.
 
-def count_nucleotides(dna_string):
-    # Initialize counts
-    counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
-    
-    for base in dna_string:
-        if base in counts:
-            counts[base] += 1
-            
-    return f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}"
+import sys
+import os
+
+# Point Python to the root directory for imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+from utils.bioutils import count_nucleotides
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_dna.txt", "r") as file:
-            dna_input = file.read().strip()
-            print(count_nucleotides(dna_input))
+        with open("rosalind_dna.txt", "r") as file:
+            dna = file.read().strip()
+            
+            # 1. Call your central utility function to get the dict
+            counts = count_nucleotides(dna)
+            
+            # 2. Format the dictionary values into space-separated string for Rosalind
+            print(f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}")
             
     except FileNotFoundError:
-        # Fallback test example
-        sample_dna = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
-        print(count_nucleotides(sample_dna))
+        # Fallback test case
+        sample = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+        counts = count_nucleotides(sample)
+        print(f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}")
 ```
-
 ## Key Python Concepts Used
 -Dictionaries: Storing the counts of four distinct keys for fast lookup and modification.
 
