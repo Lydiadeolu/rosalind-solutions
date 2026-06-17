@@ -10,11 +10,6 @@
 
 ## Biological Background
 
-
-
-[Image of transcription process from DNA to RNA]
-
-
 In living cells, genetic information flows from DNA to RNA to Protein (a concept known as the Central Dogma of Molecular Biology). **Transcription** is the first major step in this pipeline, where a specific segment of DNA is copied into RNA (specifically messenger RNA, or mRNA) by the enzyme RNA polymerase. 
 
 Chemically, RNA is very similar to DNA, but it possesses two structural differences:
