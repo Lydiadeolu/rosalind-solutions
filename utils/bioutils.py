@@ -62,3 +62,15 @@ def calculate_gc_content(dna: str) -> float:
     g_count = dna_upper.count('G')
     c_count = dna_upper.count('C')
     return ((g_count + c_count) / len(dna)) * 100
+
+
+def hamming_distance(s1: str, s2: str) -> int:
+    """
+    Calculates the Hamming distance between two strings of equal length.
+    Returns the number of positions at which the corresponding symbols are different.
+    """
+    if len(s1) != len(s2):
+        raise ValueError("Strings must be of equal length to calculate Hamming distance.")
+        
+    # Use zip() to pair up characters and count mismatches
+    return sum(1 for c1, c2 in zip(s1, s2) if c1 != c2)
