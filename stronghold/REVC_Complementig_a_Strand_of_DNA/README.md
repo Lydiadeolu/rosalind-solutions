@@ -57,7 +57,7 @@ from utils.bioutils import reverse_complement
 
 if __name__ == "__main__":
     try:
-        with open("rosalind_revc.txt", "r") as file:
+        with open("C:/Users/adeolu/Downloads/rosalind_revc.txt") as file:
             dna_sequence = file.read().strip()
             print(reverse_complement(dna_sequence))
             
