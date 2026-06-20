@@ -35,7 +35,12 @@ python_village/
 ├── INI4_Conditions_and_Loops/
 │   ├── README.md
 │   └── solution.py
-└── ...
+├── INI3_Strings_and_Lists/
+│   ├── README.md
+│   └── solution.py
+├── INI4_Conditions_and_Loops/
+│   ├── README.md
+    └── solution.py
 
 ```
 ## Data Isolation
