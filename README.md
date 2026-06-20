@@ -28,10 +28,16 @@ rosalind-solutions/
     └── INI6_Dictionaries/                                # Dedicated problem folder
         ├── solution.py
         └── README.md                                     # Problem notes and algorithms
-        
+
 └── stronghold/                                           # Core algorithmic bioinformatics track
     ├── README.md                                         # Track overview
     └── DNA_counting_nucleotides/                         # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+    └── RNA_Transcribing_DNA_to_RNA/                         # Dedicated problem folder
+        ├── solution.py
+        └── README.md                                     # Problem notes and algorithms
+    └── REVC_Complementaring_a_Strand_of_DNA/                         # Dedicated problem folder
         ├── solution.py
         └── README.md                                     # Problem notes and algorithms
 └──armory/                                                #solving problems with external biological tools
