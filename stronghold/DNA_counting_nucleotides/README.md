@@ -16,7 +16,7 @@ DNA (deoxyribonucleic acid) is a long molecule that contains our unique genetic 
 
 ## Problem Statement
 
-Given a DNA string $s$ (a string of length at most 1000 bp), return four integers separated by spaces, counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in $s$.
+Given a DNA string s (a string of length at most 1000 bp), return four integers separated by spaces, counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in s.
 
 ---
 
