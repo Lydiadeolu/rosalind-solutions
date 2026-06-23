@@ -30,7 +30,7 @@ Output: `MAMAPRTVII`
 
 ---
 
-## Approach
+## Manual Approach
 
 1. Read the raw mRNA sequence from the input file.
 2. Initialize an empty sequence array to accumulate mapped amino acids.
@@ -40,6 +40,13 @@ Output: `MAMAPRTVII`
 6. If the lookup encounters a `Stop` codon flag, break out of the processing loop immediately.
 7. Merge the accumulated letters into a unified output string.
 
+### 📝 Architectural Note: Manual Implementation vs. Biopython Approach
+
+| Feature | Manual Implementation (`utils/bioutils.py`) | Biopython Approach (`from Bio import ...`) |
+| :--- | :--- | :--- |
+| **Logic Overhead** | High. Requires hardcoding and maintaining massive static mapping frameworks (like the 64-entry `RNA_CODON_TABLE`). | None. Biological translation maps are handled completely internally by core library configurations. |
+| **Edge Cases** | Must be handled manually via nested control flow statements (e.g., checking slice bounds or specifically handling `Stop` flags). | Handled via parameters. Setting `to_stop=True` automatically truncates translation at termination boundaries smoothly. |
+| **Alternative Tables**| Tedious. Switching to non-standard codes (like Mitochondrial or Bacterial variants) requires duplicating or updating dictionaries. | Seamless. Allows passing simple integer arguments (e.g., `translate(table=2)`) to swap between NCBI genetic code schemas instantly. |
 ---
 
 ## Solution
@@ -69,7 +76,41 @@ if __name__ == "__main__":
         # Fallback textbook sample case
         sample = "AUGGCCAUGGCGCCCAGAACUGUGAUCAUAUGA"
         print(translate_rna_to_protein(sample))
+ 
+# prot_Biopython.py
+# Key decisions: Initializing an immutable Bio.Seq object abstracts away manual 
+# dictionary lookups. Invoking the .translate() method automatically maps the sequence 
+# using the standard genetic code table and cleanly stops execution at termination signals 
+# via the to_stop=True flag parameter.
 
+from Bio import SeqIO
+from Bio.Seq import Seq
+
+def translate_biopython(rna_sequence: str) -> str:
+    """
+    Translates RNA to Protein utilizing Biopython's built-in translation mechanics.
+    """
+    
+    rna_obj = Seq(rna_sequence.upper().strip())
+    
+    # to_stop=True tells Biopython to halt at the first Stop codon and omit it from the string
+    protein_obj = rna_obj.translate(to_stop=True)
+    
+    return str(protein_obj)
+
+if __name__ == "__main__":
+    try:
+        with open("C:/Users/adeolu/Downloads/rosalind_prot.txt") as file:
+            rna_sequence = file.read().strip()
+            protein = translate_biopython(rna_sequence)
+            print("\n--- Biopython Approach Output ---")
+            print(protein)
+            
+    except FileNotFoundError:
+        # Fallback textbook test case
+        sample_dna = "GATGGAACTTGACTACGTAAATT"
+        print(translate_biopython(sample_dna))
+    
 ```
 
 ## Key Python Concepts Used
