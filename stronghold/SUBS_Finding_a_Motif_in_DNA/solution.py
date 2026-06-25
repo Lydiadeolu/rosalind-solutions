@@ -12,7 +12,7 @@ from utils.bioutils import find_motif_indices
 
 if __name__ == "__main__":
     try:
-        with open("rosalind_subs.txt", "r") as file:
+        with open("C:/Users/adeolu/Downloads/rosalind_subs.txt") as file:
             lines = [line.strip() for line in file if line.strip()]
             
             if len(lines) >= 2:
@@ -20,6 +20,7 @@ if __name__ == "__main__":
                 t = lines[1]
                 
                 indices = find_motif_indices(s, t)
+
                 # Convert integer list to space-separated string array
                 print(" ".join(map(str, indices)))
             else:
