@@ -112,6 +112,7 @@ RNA_CODON_TABLE = {
     'UGG': 'W', 'CGG': 'R', 'AGG': 'R', 'GGG': 'G'
 }
 
+
 def translate_rna_to_protein(rna: str) -> str:
     """
     Translates an RNA string into a protein string using the standard genetic code.
