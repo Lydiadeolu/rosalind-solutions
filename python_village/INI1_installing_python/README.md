@@ -27,24 +27,20 @@ The problem serves as a "Hello word
 2. Use the `import` keyword to load the built-in `this` module
 3. Run the script to output the Zen of Python text to the concole.
 
+---
+
 ## Solution
 
-```python
-# solution.py
-# key decisions: No complex data structures are needed here
-# Simply importing the `this` module authomatically triggers the print statement
-# containing the Zen of Python.
+See the [Python Solution](solution.py) for this problem.
 
-import this
-
-```
 ---
-## key Python Concepts Used
-```
-- Modules and Importing: Using the import statment to bring external or built-in code into current workspace.
 
-- The Zen of python: Aset of core philosophies distilled by Tim Peters that influences the desing and style of Python code (e.g., "Beautiful is better than ugly," "Simpe is better than complex")
-```
+## key Python Concepts Used
+
+-Modules and Importing: Using the import statment to bring external or built-in code into current workspace.
+
+-The Zen of python: Aset of core philosophies distilled by Tim Peters that influences the desing and style of Python code (e.g., "Beautiful is better than ugly," "Simpe is better than complex")
+
 ---
 
 ## Related Problems

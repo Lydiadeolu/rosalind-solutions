@@ -11,7 +11,7 @@ def extract_even_lines(input_path, output_path="output.txt"):
 
 if __name__ == "__main__":
     try:
-        extract_even_lines("C:/Users/adeolu/Downloads/rosalind_ini5.txt")
+        extract_even_lines("python_village/Dateset/rosalind_ini5.txt")
         print("Success! Even lines extracted to 'output.txt'.")
             
     except FileNotFoundError:

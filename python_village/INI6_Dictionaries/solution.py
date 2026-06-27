@@ -17,7 +17,7 @@ def count_word_frequencies(text_string):
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_ini6 (1).txt") as file:
+        with open("python_village/Datesetrosalind_ini6 (1).txt") as file:
             content = file.read()
             frequencies = count_word_frequencies(content)
             
