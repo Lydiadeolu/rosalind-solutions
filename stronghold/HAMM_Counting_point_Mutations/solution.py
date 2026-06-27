@@ -12,7 +12,7 @@ from utils.bioutils import hamming_distance
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_hamm.txt") as file:
+        with open("stronghold/Dataset/rosalind_hamm.txt") as file:
             # Read lines and strip out trailing newline spacing markers
             lines = [line.strip() for line in file if line.strip()]
             

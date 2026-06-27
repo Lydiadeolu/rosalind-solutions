@@ -32,38 +32,8 @@ Given a DNA string s (a string of length at most 1000 bp), return four integers 
 
 ## Solution
 
-```python
-# solution.py
-# Key decisions: While one could use string.count(), iterating through the string 
-# once is more efficient (O(n) time complexity) for very large sequences. 
-# Using a dictionary or the collections.Counter class provides a clean, 
-# readable implementation.
-
-import sys
-import os
-
-# Point Python to the root directory for imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-from utils.bioutils import count_nucleotides
-
-if __name__ == "__main__":
-    try:
-        with open("rosalind_dna.txt", "r") as file:
-            dna = file.read().strip()
-            
-            # 1. Call your central utility function to get the dict
-            counts = count_nucleotides(dna)
-            
-            # 2. Format the dictionary values into space-separated string for Rosalind
-            print(f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}")
-            
-    except FileNotFoundError:
-        # Fallback test case
-        sample = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
-        counts = count_nucleotides(sample)
-        print(f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}")
-```
+See the [Python Solution](solution.py) for this problem.
+ 
 ## Key Python Concepts Used
 -Dictionaries: Storing the counts of four distinct keys for fast lookup and modification.
 

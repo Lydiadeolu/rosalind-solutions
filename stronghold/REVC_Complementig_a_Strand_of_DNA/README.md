@@ -41,31 +41,7 @@ Output: `ACCGGGTTTT`
 
 ## Solution
 
-```python
-# solution.py
-# Key decisions: Using str.maketrans() combined with .translate() allows Python 
-# to perform character swaps simultaneously across the entire array in highly 
-# optimized C under the hood, dodging the bugs that come with manual loop assignments.
-
-import sys
-import os
-
-# Point Python to the root directory for central toolkit imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-from utils.bioutils import reverse_complement
-
-if __name__ == "__main__":
-    try:
-        with open("C:/Users/adeolu/Downloads/rosalind_revc.txt") as file:
-            dna_sequence = file.read().strip()
-            print(reverse_complement(dna_sequence))
-            
-    except FileNotFoundError:
-        # Fallback textbook test case
-        sample = "AAAACCCGGT"
-        print(reverse_complement(sample))
-```
+See the [Python Solution](solution.py) for this problem.
 
 ## Key Python Concepts Used
 -str.maketrans() and str.translate(): An efficient pair of internal functions designed to replace multiple single characters at the same time without interfering step-overlaps.

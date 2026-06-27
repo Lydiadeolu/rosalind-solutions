@@ -13,7 +13,7 @@ from utils.bioutils import transcribe_dna_to_rna
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_rna.txt") as file:
+        with open("stronghold/Dataset/rosalind_rna.txt") as file:
             dna_sequence = file.read().strip()
             # Call our decoupled utility function
             rna_sequence = transcribe_dna_to_rna(dna_sequence)

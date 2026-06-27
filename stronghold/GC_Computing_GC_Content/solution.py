@@ -23,6 +23,6 @@ def find_highest_gc(fasta_file_path):
 
 if __name__ == "__main__":
     try:
-        print(find_highest_gc("C:/Users/adeolu/Downloads/rosalind_gc.txt"))
+        print(find_highest_gc("stronghold/Dataset/rosalind_gc.txt"))
     except FileNotFoundError:
         print("Error: 'rosalind_gc.txt' dataset file not found.")

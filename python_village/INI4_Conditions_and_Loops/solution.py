@@ -13,7 +13,7 @@ def sum_odds_in_range(a, b):
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_ini4.txt") as file:
+        with open("python_village/Dateset/rosalind_ini4.txt") as file:
             # Parse the two space-separated integers
             a, b = map(int, file.read().strip().split())
             print(sum_odds_in_range(a, b))

@@ -34,41 +34,9 @@ Given a string $s$ of words separated by spaces (up to 10,000 characters), retur
 
 ## Solution
 
-```python
-# solution.py
-# Key decisions: Python's native dictionary provides O(1) average-time complexity 
-# for lookups and insertions, making it incredibly fast. While we could use 
-# collections.Counter, implementing a standard dictionary loop directly 
-# satisfies the problem's goal of teaching core dictionary mechanics.
+See the [Python Solution](solution.py) for this problem.
 
-def count_word_frequencies(text_string):
-    word_counts = {}
-    words = text_string.strip().split()
-    
-    for word in words:
-        if word in word_counts:
-            word_counts[word] += 1
-        else:
-            word_counts[word] = 1
-            
-    return word_counts
-
-if __name__ == "__main__":
-    try:
-        with open("rosalind_ini6.txt", "r") as file:
-            content = file.read()
-            frequencies = count_word_frequencies(content)
-            
-            for word, count in frequencies.items():
-                print(f"{word} {count}")
-            
-    except FileNotFoundError:
-        # Fallback test example from Rosalind description
-        sample_str = "We will win we will win"
-        frequencies = count_word_frequencies(sample_str)
-        for word, count in frequencies.items():
-            print(f"{word} {count}")
-```
+---
 
 ## Key Python Concepts Used
 
@@ -77,6 +45,8 @@ if __name__ == "__main__":
 -string.split(): Breaks text into a list of words, automatically handling variable whitespace and newlines when called without arguments.
 
 -dict.items(): A loop utility method that returns viewable tuples of both the (key, value) pairs simultaneously.
+
+---
 
 ## Related Problems
 INI5 -- Prerequisite: processing string inputs and file lines.

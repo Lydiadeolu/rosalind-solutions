@@ -9,7 +9,7 @@ def slice_string_segments(s, a, b, c, d):
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_ini3.txt" ) as file:
+        with open("python_village/Dateset/rosalind_ini3.txt" ) as file:
             # Read lines and strip out trailing newline characters
             lines = [line.strip() for line in file.readlines()]
             

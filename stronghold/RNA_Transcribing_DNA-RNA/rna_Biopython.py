@@ -21,7 +21,7 @@ def transcribe_biopython(dna_sequence: str) -> str:
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_rna.txt") as file:
+        with open("stronghold/Dataset/rosalind_rna.txt") as file:
             dna_sequence = file.read().strip()
             rna_sequence = transcribe_biopython(dna_sequence)
             print("\n--- Biopython Approach Output ---")
