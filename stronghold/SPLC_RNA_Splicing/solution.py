@@ -39,7 +39,7 @@ def splice_and_translate(fasta_file_path: str) -> str:
 
 if __name__ == "__main__":
     try:
-        dataset_path = "C:/Users/adeolu/Downloads/rosalind_splc.txt"
+        dataset_path = "stronghold/Dataset/rosalind_splc.txt"
         print(splice_and_translate(dataset_path))
         
     except FileNotFoundError:

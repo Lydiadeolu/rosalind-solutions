@@ -25,7 +25,7 @@ def calculate_dominant_probability(k: int, m: int, n: int) -> float:
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_iprb.txt") as file: 
+        with open("stronghold/Dataset/rosalind_iprb.txt") as file: 
             k, m, n = map(int, file.read().strip().split())
             print(f"{calculate_dominant_probability(k, m, n):.5f}")
             

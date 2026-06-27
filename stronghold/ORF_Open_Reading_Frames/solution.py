@@ -45,7 +45,8 @@ if __name__ == "__main__":
     from utils.bioutils import parse_fasta
     
     try:
-            dataset_path = "C:/Users/adeolu/Downloads/rosalind_orf.txt"
+            current_dir = os.path.dirname(__file__)
+            dataset_path = os.path.abspath(os.path.join(current_dir, "..", "Dataset", "rosalind_orf.txt"))
             fasta_dict = parse_fasta(dataset_path)
         
             # Pull the primary DNA sequence string from the parsed FASTA dict

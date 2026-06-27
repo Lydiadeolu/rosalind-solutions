@@ -12,7 +12,7 @@ from utils.bioutils import translate_rna_to_protein
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_prot.txt") as file:
+        with open("stronghold/Dataset/rosalind_prot.txt") as file:
             rna_sequence = file.read().strip()
             protein_sequence = translate_rna_to_protein(rna_sequence)
             print(protein_sequence)

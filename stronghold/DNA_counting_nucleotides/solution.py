@@ -8,7 +8,7 @@ from utils.bioutils import count_nucleotides
 
 if __name__ == "__main__":
     try:
-        with open("rosalind_dna.txt", "r") as file:
+        with open("stronhold/Dataset/rosalind_dna.txt", "r") as file:
             dna = file.read().strip()
             
             # 1. Call your central utility function to get the dict

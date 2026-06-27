@@ -51,68 +51,12 @@ As this repository scales, solutions will pivot between **Manual Implementation*
 ---
 
 ## Solution
+#mannual approach
+See the [Python Solution](solution.py) for this problem.
 
-```python
-# solution.py
-# Key decisions: String manipulation in Python is highly efficient. Since strings 
-# are immutable, using the built-in .replace() method returns a brand new sequence 
-# block in memory instantly, which matches our exact operational requirements.
+#biopython approach
+See the [Python Solution](rna_Biopython.py) for this problem.
 
-import sys
-import os
-
-# Point Python to the root directory for central toolkit imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-from utils.bioutils import transcribe_dna_to_rna
-
-if __name__ == "__main__":
-    try:
-        with open("C:/Users/adeolu/Downloads/rosalind_rna.txt",) as file:
-            dna_sequence = file.read().strip()
-            # Call our decoupled utility function
-            rna_sequence = transcribe_dna_to_rna(dna_sequence)
-            print(rna_sequence)
-            
-    except FileNotFoundError:
-        # Fallback textbook test case
-        sample = "GATGGAACTTGACTACGTAAATT"
-        print(transcribe_dna_to_rna(sample))
-
-# rna_Biopython.py
-# Key decisions: Wrapping the raw text in an immutable Biopython Seq object promotes 
-# the string to a validated biological entity. Invoking the native .transcribe() 
-# method executes optimized C-level manipulations under the hood, ensuring type safety 
-# and structural scalability without manual string replacement overhead.
-
-from Bio import SeqIO
-from Bio.Seq import Seq
-
-def transcribe_biopython(dna_sequence: str) -> str:
-    """
-    Transcribes DNA to RNA utilizing Biopython's dedicated Seq object.
-    """
-    # 1. Cast the raw string into an immutable Biopython Seq object
-    dna_obj = Seq(dna_sequence.upper())
-    
-    # 2. Invoke the built-in biological transcription method
-    rna_obj = dna_obj.transcribe()
-    
-    # 3. Convert back to string for Rosalind text submission output
-    return str(rna_obj) 
-
-if __name__ == "__main__":
-    try:
-        with open("C:/Users/adeolu/Downloads/rosalind_rna.txt") as file:
-            dna_sequence = file.read().strip()
-            rna_sequence = transcribe_biopython(dna_sequence)
-            print("\n--- Biopython Approach Output ---")
-            print(rna_sequence)
-    except FileNotFoundError:
-        # Fallback textbook test case
-        sample_dna = "GATGGAACTTGACTACGTAAATT"
-        print(transcribe_biopython(sample_dna))
-```
 ## Key Python Concepts Used
 -str.replace(old, new): Returns a copy of the target string with all occurrences of substring old replaced by new.
 

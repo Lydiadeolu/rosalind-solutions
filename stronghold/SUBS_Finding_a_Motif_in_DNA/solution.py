@@ -12,7 +12,7 @@ from utils.bioutils import find_motif_indices
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_subs.txt") as file:
+        with open("stronghold/Dataset/rosalind_subs.txt") as file:
             lines = [line.strip() for line in file if line.strip()]
             
             if len(lines) >= 2:

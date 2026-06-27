@@ -20,7 +20,7 @@ def translate_biopython(rna_sequence: str) -> str:
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_prot.txt") as file:
+        with open("stronghold/Dataset/rosalind_prot.txt") as file:
             rna_sequence = file.read().strip()
             protein = translate_biopython(rna_sequence)
             print("\n--- Biopython Approach Output ---")

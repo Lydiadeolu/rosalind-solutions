@@ -50,69 +50,11 @@ Output: `MAMAPRTVII`
 ---
 
 ## Solution
+#manual approach
+See the [Python Solution](solution.py) for this problem.
 
-```python
-# solution.py
-# Key decisions: Using a native Python dict for the codon map provides instantaneous 
-# O(1) loop lookups. Slicing with a step parameter of 3 allows straightforward 
-# non-overlapping processing of codons.
-
-import sys
-import os
-
-# Point Python to the root directory for central toolkit imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-from utils.bioutils import translate_rna_to_protein
-
-if __name__ == "__main__":
-    try:
-        with open("C:/Users/adeolu/Downloads/rosalind_prot.txt") as file:
-            rna_sequence = file.read().strip()
-            protein_sequence = translate_rna_to_protein(rna_sequence)
-            print(protein_sequence)
-            
-    except FileNotFoundError:
-        # Fallback textbook sample case
-        sample = "AUGGCCAUGGCGCCCAGAACUGUGAUCAUAUGA"
-        print(translate_rna_to_protein(sample))
- 
-# prot_Biopython.py
-# Key decisions: Initializing an immutable Bio.Seq object abstracts away manual 
-# dictionary lookups. Invoking the .translate() method automatically maps the sequence 
-# using the standard genetic code table and cleanly stops execution at termination signals 
-# via the to_stop=True flag parameter.
-
-from Bio import SeqIO
-from Bio.Seq import Seq
-
-def translate_biopython(rna_sequence: str) -> str:
-    """
-    Translates RNA to Protein utilizing Biopython's built-in translation mechanics.
-    """
-    
-    rna_obj = Seq(rna_sequence.upper().strip())
-    
-    # to_stop=True tells Biopython to halt at the first Stop codon and omit it from the string
-    protein_obj = rna_obj.translate(to_stop=True)
-    
-    return str(protein_obj)
-
-if __name__ == "__main__":
-    try:
-        with open("C:/Users/adeolu/Downloads/rosalind_prot.txt") as file:
-            rna_sequence = file.read().strip()
-            protein = translate_biopython(rna_sequence)
-            print("\n--- Biopython Approach Output ---")
-            print(protein)
-            
-    except FileNotFoundError:
-        # Fallback textbook test case
-        sample_dna = "GATGGAACTTGACTACGTAAATT"
-        print(translate_biopython(sample_dna))
-    
-```
-
+#biopython approach
+See the [Python Solution](prot_Biopython.py) for this problem.
 ## Key Python Concepts Used
 
 -dict.get(key, default): Safely queries a dictionary without throwing a key error if the data slice is malformed or corrupted.

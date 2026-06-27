@@ -27,7 +27,7 @@ def solve_fib(n: int, k: int) -> int:
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_fib.txt") as file:
+        with open("stronhold/Dataset/rosalind_fib.txt") as file:
             # Read lines and strip out trailing newline spacing markers
             n, k = map(int, file.read().strip().split())
             print(solve_fib(n, k))

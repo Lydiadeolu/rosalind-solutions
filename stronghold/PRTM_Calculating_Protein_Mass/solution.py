@@ -12,7 +12,7 @@ from utils.bioutils import calculate_protein_mass
 
 if __name__ == "__main__":
     try:
-        with open("C:/Users/adeolu/Downloads/rosalind_prtm.txt") as file:
+        with open("stronghold/Dataset/rosalind_prtm.txt") as file:
             protein_string = file.read().strip()
 
             result = calculate_protein_mass(protein_string)
