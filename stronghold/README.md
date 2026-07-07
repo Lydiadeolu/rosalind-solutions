@@ -20,6 +20,12 @@ This section contains solutions for the **Bioinformatics Stronghold** track on [
 | **IPRB** | [Mendelian Inheritance](./IPRB_Mendelian_Inheritance/) | Analytical probability tree matrices |  Completed |
 | **ORF** | [Open Reading Frames](./ORF_Open_Reading_Frames/) | Six-frame translation coordinate mapping |  Completed |
 | **SPLC** | [RNA Splicing](./SPLC_RNA_Splicing/) | Intron stripping and exon translation |  Completed |
+| **CONS** | [Consensus and Profile](./CONS_Consensus_and_Profile/) | Matrix profile compilation and consensus sequence extraction |  Completed |
+| **GRPH** | [Overlap Graphs](./GRPH_Overlap_Graphs/) | De Bruijn directed graph construction via suffix-prefix matching |  Completed |
+| **LONG** | [Genome Assembly as Shortest Superstring](./LONG_Genome_Assembly_as_Shortest_Superstring/) | Greedy shortest common superstring reconstruction from reads |  Completed |
+| **NEED** | [Pairwise Global Alignment](./NEED_Pairwise_Global_Alignment/) | Needleman-Wunsch sequence distance matrix with affine gap grids |  Completed |
+| **FIBD** | [Mortal Fibonacci Rabbits](./FIBD_Mortal_Fibonacci_Rabbits/) | Dynamic programming via generational shifting sliding window arrays |  Completed |
+| **PERM** | [Enumerating Gene Order](./PERM_Enumerating_Gene_Order/) | Combinatorial chromosome rearrangement tracking using permutations |  Completed |
 
 ---
 
@@ -69,6 +75,21 @@ stronghold/
 │   ├── README.md                        # Problem breakdown, biological background, and approach
 │   └── solution.py                      # Clean, runnable Python script using portable path routing
 ├── SPLC_RNA_Splicing/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── CONS_Concensus and Profile/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── GRPH_Overlap_Graphs/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── NEED_Pairwise _Global Alignment/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── FIBD_Mortal_Fibonnaci_Rabbits/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── PERM_Enumerating_Gene_Oders/
 │   ├── README.md                        # Problem breakdown, biological background, and approach
 │   └── solution.py                      # Clean, runnable Python script using portable path routing
 └── ...
