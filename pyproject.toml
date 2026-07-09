@@ -7,3 +7,25 @@ requires-python = ">=3.14"
 dependencies = [
     "biopython>=1.87",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.20",
+]
+
+[tool.ruff]
+# Set this to match your project's target Python version
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+# Select rules to enforce:
+# E/W = pycodestyle (standard formatting guidelines)
+# F = pyflakes (catches real bugs, undefined names, dead code)
+# I = isort (automatically organizes and groups your imports)
+select = ["E", "W", "F", "I"]
+
+# Ignore specific rules that might conflict with your existing setup
+ignore = [
+    "E501" # Line too long (allows lines to go past 88 chars without raising errors)
+]
