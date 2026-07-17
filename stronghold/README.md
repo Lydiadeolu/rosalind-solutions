@@ -26,6 +26,16 @@ This section contains solutions for the **Bioinformatics Stronghold** track on [
 | **NEED** | [Pairwise Global Alignment](./NEED_Pairwise_Global_Alignment/) | Needleman-Wunsch sequence distance matrix with affine gap grids |  Completed |
 | **FIBD** | [Mortal Fibonacci Rabbits](./FIBD_Mortal_Fibonacci_Rabbits/) | Dynamic programming via generational shifting sliding window arrays |  Completed |
 | **PERM** | [Enumerating Gene Order](./PERM_Enumerating_Gene_Order/) | Combinatorial chromosome rearrangement tracking using permutations |  Completed |
+| **IEV** | [Calculating Expected Offspring](./IEV_Calculating_Expected_Offspring/) | Mendelian Probability & Expected Value |	Completed |
+| **SIGN** | [Orienting Random Orderings](./SIGN_Oriented_Expected_Offspring/) | Combinatorics & Signed Permutations	| Completed |
+| **MPRT** | [Finding a Protein Motif](./MPRT_Finding_a_Protein_Motif/)	| UniProt API Queries & Regex Lookaheads | Completed |
+| **REVP** | [Locating Restriction Sites](./REVP_Locating_Restriction_Sites/) | DNA Reverse Palindromes & Sliding Windows |	Completed |
+| **LIA** | [Independent Alleles](./LIA_Independent_Alleles/) | Multigenerational Binomial Probability |	Completed |
+| **PMCH** | [Perfect Matchings and RNA Secondary Structures](./PMCH_Perfect_Matchings_and_Secondary_Structures/) |	Graph Theory & RNA Secondary Structures |	Completed |
+| **PROB** |	[Introduction to Random Strings	GC-Content](./PROB_Introduction_to_Random_Strings/) | Log Likelihoods & Probabilities |	Completed |
+| **MULT** | [Multiple Alignment](./MULT_Multiple_Alignment/) | Global Progressive Alignment | Completed |
+| **LCSM** | [Finding a Shared Motif](./LCSM_Finding_a_Shared_Motif/) | Longest Common Substring & Binary Search | 	Completed |
+| **LGIS** | [Longest Increasing Subsequence](./LGIS_Longest_Increasing_Subsequence/) | Dynamic Programming & Patience Sorting |Completed |
 
 ---
 
@@ -92,8 +102,40 @@ stronghold/
 ├── PERM_Enumerating_Gene_Oders/
 │   ├── README.md                        # Problem breakdown, biological background, and approach
 │   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── LCSM_Finding_a_Shared_Motifs/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── LGIS_Longest_Increasing_Subsequence/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── PMCH_Perfect_Matching_and_RNA_Structure/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── LIA_Independent_Alleeles/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── PROB_Introduction_To_Random_Strings/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── MPRT_Finding_a_Protein_Motif/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── REVP_Locating_Restriction_Sites/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── MULT_Multiple_Alignment/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── SIGN_Enumerating_Oriented_Gene_Orderings/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
+├── IEV_Calculating_Expected_Offspring/
+│   ├── README.md                        # Problem breakdown, biological background, and approach
+│   └── solution.py                      # Clean, runnable Python script using portable path routing
 └── ...
 ```
+## Key Concepts Table
+
 ## Data Isolation
 Individual downloaded dataset texts (rosalind_*.txt) are tracked inside a local, centralized Dataset/ directory. These files are explicitly ignored by the repository's rules where necessary to protect pipeline hygiene and honor Rosalind's unique per-user dataset dynamic.
 

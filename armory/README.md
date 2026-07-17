@@ -35,9 +35,13 @@ armory/
 ├── GBK_GenBank_Introduction/
 │   ├── README.md                      # <-- Exact API syntax map documentation
 │   └── solution.py                    # <-- Core pathlib-driven execution script
+├── FRMT_Data_Formats/
+│   ├── README.md                      # <-- Exact API syntax map documentation
+│   └── solution.py                    # <-- Core pathlib-driven execution script
 └── Dataset/                           # <-- Centralized data download directory
     ├── rosalind_gbk.txt
     └── rosalind_need.txt
+    └── rosalind_frmt.txt
 ```
 ---
 
