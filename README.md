@@ -40,9 +40,95 @@ rosalind-solutions/
     └── REVC_Complementaring_a_Strand_of_DNA/                         # Dedicated problem folder
         ├── solution.py
         └── README.md                                     # Problem notes and algorithms
+    └── GC_Computing_GC_Content/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── HAMM_Counting_point_Mutation/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── SUBS_Finding_a_Motif_in_DNA/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── PROT_Translating_RNA_into_Protein/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+       └── prot_Biopython.py 
+    └── PRTM_Calculating_Protein_Mass/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── FIB_Rabbits_and_Recurrence_Relation/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── IPRB_Mendel_First_Law/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── ORF_Opem_Reading_Frames/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── SPLC_RNA_Splicing/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── CONS_Concensus and Profile/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── GRPH_Overlap_Graphs/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── NEED_Pairwise _Global Alignment/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── FIBD_Mortal_Fibonnaci_Rabbits/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── PERM_Enumerating_Gene_Oders/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── LCSM_Finding_a_Shared_Motifs/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── LGIS_Longest_Increasing_Subsequence/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── PMCH_Perfect_Matching_and_RNA_Structure/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── LIA_Independent_Alleeles/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── PROB_Introduction_To_Random_Strings/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── MPRT_Finding_a_Protein_Motif/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └──REVP_Locating_Restriction_Sites/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── MULT_Multiple_Alignment/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── SIGN_Enumerating_Oriented_Gene_Orderings/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+    └── IEV_Calculating_Expected_Offspring/
+       ├── README.md                        # Problem breakdown, biological background, and approach
+       └── solution.py                      # Clean, runnable Python script using portable path routing
+
 └──armory/                                                #solving problems with external biological tools
     ├── README.md  
-    └── ....
+    └── INI_Introduction_to_Armory/
+       └── README.md                      # <-- Problem breakdown & execution docs
+    └── GBK_GenBank_Introduction/
+       ├── README.md                      # <-- Exact API syntax map documentation
+       └── solution.py                    # <-- Core pathlib-driven execution script
+    └── FRMT_Data_Formats/
+       ├── README.md                      # <-- Exact API syntax map documentation
+       └── solution.py                    # <-- Core pathlib-driven execution script
+    └── Dataset/                           # <-- Centralized data download directory
+       ├── rosalind_gbk.txt
+       └── rosalind_need.txt
+       └── rosalind_frmt.txt
+       
 └──utils/                                                 # Modular, reuseable helper functions
    └──bioutils.py                                         # Centalized biology logic (DNA transcription, etc.)
 ```
@@ -113,6 +199,41 @@ Below is an active checklist of my completed challenges. I update this whenever 
 
 #### [ ] SUBS - Finding a Motif in DNA
 
+#### [ ] PRTM - Calculating Protein Mass
+
+#### [ ] IPRB - Mendel's First Law
+
+#### [ ] ORF - Open Reading Frame
+
+#### [ ] SPLC - RNA Splicing
+
+#### [ ] CONS - Consensus and Profile
+
+#### [ ] GRPH - Overlaps Graph
+
+#### [ ] LONG - Geneome Assembly
+
+#### [ ] LCSM - Finding a Shared Motif
+
+#### [ ] LGIS - Longest Increasing Subsequence
+
+#### [ ] PMCH - Perfect Matchings and RNA Secondary Structure
+
+#### [ ] LIA - Independent Alleles
+
+#### [ ] PROB - Introduction to Random Strings
+
+#### [ ] MPRT - Finding a Protein Motif
+
+#### [ ] REVP - Locating Restriction Sites
+
+#### [ ] MULT - Multiple Alignment
+
+#### [ ] SIGN - Enumerating Oriented Gene Orderings
+
+#### [ ] IEV - Calculating Expected Offspring
+
+
 ## 🛡️ Bioinformatics Armory (Using Industry Tools)
 
 #### [ ] INI - Introduction to the Bioinformatics Armory
@@ -120,6 +241,9 @@ Below is an active checklist of my completed challenges. I update this whenever 
 #### [ ] DBPR - Introduction to Protein Databases
 
 #### [ ] GBK - GenBank Introduction
+
+#### [ ] FRMT - Data Formats
+
 
 ## 🧬 Academic Context & Goals
 
