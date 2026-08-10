@@ -13,7 +13,7 @@ def retrieve_shortest_ncbi_fasta(accession_ids: list[str]) -> str:
     lengths of all requested IDs, and returns the shortest entry in full FASTA layout.
     """
     # Required by NCBI policy—identifies the application context to API controllers
-    Entrez.email = "developer.bioinformatics@example.com"
+    Entrez.email = "oyelabiadeolu@gmail.comS"
     
     # Execute batch request to minimize connection handshakes
     try:
