@@ -2,7 +2,7 @@
 
 Welcome to my repository of solutions for Rosalind, a platform for learning bioinformatics through problem-solving. This repository serves as a structured archive of my journey in computational biology, mapping out solutions to algorithmic challenges that bridge computer science, mathematics, and genetics.
 
-## 📂 Repository Structure
+## Repository Structure
 
 The project is organized hierarchically by Rosalind tracks, keeping each solution isolated alongside its mathematical/biological context.
 
@@ -133,7 +133,7 @@ rosalind-solutions/
    └──bioutils.py                                         # Centalized biology logic (DNA transcription, etc.)
 ```
 
-## 🛠️ Getting Started & Installation
+## Getting Started & Installation
 
     To run these scripts locally, ensure you have Python 3.8+ installed on your system.
 
@@ -154,7 +154,7 @@ rosalind-solutions/
        pip install -r requirements.txt
 
 
-## 🧩 The utils/ Library (DRY Principle)
+## The utils/ Library (DRY Principle)
 
 Bioinformatics problems often require repetitive tasks (e.g., transcribing DNA, calculating GC-content, translating RNA to proteins). To maintain clean code and follow DRY (Don't Repeat Yourself) principles, all core helper functions are modularized inside utils/bioutils.py.
 
@@ -163,11 +163,11 @@ Any solution script can easily import these shared functions:
 from utils.bioutils import transcribe_dna, translate_rna
 
 
-## 📊 Progress Tracker
+## Progress Tracker
 
 Below is an active checklist of my completed challenges. I update this whenever I push new solutions.
 
-### 🐍 Python Village (Basics of Programming)
+### Python Village (Basics of Programming)
 
 #### [ ] INI1 - Installing Python
 
@@ -181,7 +181,7 @@ Below is an active checklist of my completed challenges. I update this whenever 
 
 #### [ ] INI6 - Dictionaries
 
-### 🏰 Bioinformatics Stronghold (Algorithmic Biology)
+### Bioinformatics Stronghold (Algorithmic Biology)
 
 #### [ ] DNA - Counting DNA Nucleotides
 
@@ -234,7 +234,7 @@ Below is an active checklist of my completed challenges. I update this whenever 
 #### [ ] IEV - Calculating Expected Offspring
 
 
-## 🛡️ Bioinformatics Armory (Using Industry Tools)
+## Bioinformatics Armory (Using Industry Tools)
 
 #### [ ] INI - Introduction to the Bioinformatics Armory
 
@@ -245,7 +245,7 @@ Below is an active checklist of my completed challenges. I update this whenever 
 #### [ ] FRMT - Data Formats
 
 
-## 🧬 Academic Context & Goals
+## Academic Context & Goals
 
 This project is built to demonstrate rigorous code organization and algorithmic problem-solving in preparation for advanced studies in computational genomics. By modeling biological systems programmatically, I aim to master:
 

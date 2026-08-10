@@ -135,6 +135,15 @@ stronghold/
 └── ...
 ```
 ## Key Concepts Table
+| Concept | Problems |
+| String Manipulation | DNA, RNA, RECV, HAMM, SUBS |
+| FASTA parsing | GC, CONS, LCSM |
+| Dynamic Programming | FIB, FIBD, LGIS, LCSM |
+| Graph algorithms | GRPH, LONG |
+| Probability and statistics | IPRB. LIA, PROB, IEV |
+| Protein translation | PROT, PRTM, ORF, SPLC |
+| Biopython | RNA, NEED, MULT, FRMT |
+| REST APIs | MRPT, DBPR | 
 
 ## Data Isolation
 Individual downloaded dataset texts (rosalind_*.txt) are tracked inside a local, centralized Dataset/ directory. These files are explicitly ignored by the repository's rules where necessary to protect pipeline hygiene and honor Rosalind's unique per-user dataset dynamic.

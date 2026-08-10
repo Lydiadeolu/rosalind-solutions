@@ -60,9 +60,11 @@ See the [Python Solution](solution.py) for this problem.
 
 ---
 
-## Performance & Optimization
+## Key Python Concepts Used
 
-This solution runs in \mathcal{O}(1) time complexity and uses \mathcal{O}(1) space complexity because the array size is permanently fixed at 6 elements. It can process populations containing millions of couples instantly.
+-`zip()` for Pairwise Iteration: Instead of accessing elements using manual list index lookups (e.g., `couples[i] * coefficients[i]`), we use `zip(couples, coefficients)`. This pairs the counts and coefficients lazily, preventing "index out of range" runtime exceptions.
+-Generator Expressions inside `sum()`: We pass an unbracketed generator expression `(count * coeff for ...)` directly to `sum()`. This processes the products one at a time and streams them to the accumulator, avoiding the need to allocate a temporary list in memory.
+-Floating-Point String Formatting (`f"{result:.1f}"`): We use Python f-strings with a precision specifier of `.1f` to guarantee the output prints with exactly one decimal place (e.g., `3.5` instead of `3.5000000002` due to floating-point rounding artifacts).
 
 ---
 

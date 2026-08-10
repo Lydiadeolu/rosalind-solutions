@@ -4,7 +4,7 @@ This section serves as a centralized archive for production-grade solutions targ
 
 ---
 
-## 🔬 Core Learning Objectives
+##  Core Learning Objectives
 
 * **API Automation:** Communicating with public federal repositories (NCBI GenBank, UniProt) via direct E-Utilities scripting without browser interface dependency.
 * **Production Library Competency:** Mastering advanced, highly optimized C-backed tools within `Bio.Seq`, `Bio.Align`, and `Bio.motifs`.
@@ -12,18 +12,19 @@ This section serves as a centralized archive for production-grade solutions targ
 
 ---
 
-## 🗂️ Track Progress & Inventory Mapping
+## Track Progress & Inventory Mapping
 
 Below is the directory map tracking implemented solutions, algorithms used, and database links.
 
 | Problem Code | Challenge Name | Primary Tools/Modules | Key Methodology | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **INI** | Introduction to the Armory | `Bio.Seq.Seq` | Optimized nucleotide extraction & processing | 🟢 Completed |
-| **GBK** | GenBank Introduction | `Bio.Entrez.esearch` | Parameterized historical date-bound API queries | 🟢 Completed |
+| **INI** | Introduction to the Armory | `Bio.Seq.Seq` | Optimized nucleotide extraction & processing |  Completed |
+| **GBK** | GenBank Introduction | `Bio.Entrez.esearch` | Parameterized historical date-bound API queries |  Completed |
+| **FRMT** | Data Formats | `Bio.Entrez.esearch` | Parameterized historical date-bound API queries |  Completed |
 
 ---
 
-## 🛠️ Repository Architectural Design
+## Repository Architectural Design
 
 Every problem folder contains a standardized layout to ensure portability and clarity:
 
@@ -56,7 +57,7 @@ dataset_path = current_dir / ".." / "Dataset" / "target_file.txt"
 
 ---
 
-## 🚀 Setup & Dependency Matrix
+## Setup & Dependency Matrix
 To execute these solutions locally, initialize an isolated virtual environment (.venv) and install the verified biological dependencies:
 
 Bash
@@ -71,6 +72,6 @@ python -c "import Bio; print(f'Biopython version configured: {Bio.__version__}')
 
 ---
 
-## ⚠️ NCBI Server Requirement Notice: 
+## NCBI Server Requirement Notice: 
 
 For all problems executing remote server queries (like GBK or NEED), ensure you configure a real email address payload (Entrez.email = "name@domain.com"). This identifies your programmatic connection stream, preventing permanent IP blocks or request throttling from federal server firewalls.
